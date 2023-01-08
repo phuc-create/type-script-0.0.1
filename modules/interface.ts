@@ -9,4 +9,13 @@ interface Person {
   position: string;
 }
 
+// Optional Properties
+interface Person2 {
+  name: string;
+  age: number;
+  hobbies?: string[];
+  position: string;
+}
+
 const simplePerson: Person = { name: "sam", age: 23, hobbies: ["soccer", "piano"], position: "dev" }
+const personWithoutHobbies: Person2 = { name: "sam", age: 23, position: "dev" }
