@@ -17,5 +17,11 @@ interface Person2 {
   position: string;
 }
 
+
 const simplePerson: Person = { name: "sam", age: 23, hobbies: ["soccer", "piano"], position: "dev" }
 const personWithoutHobbies: Person2 = { name: "sam", age: 23, position: "dev" }
+
+// Easy to custom tuple
+interface exTuple { 0: number, 1: string }
+
+[1, "a", 1, 2, "abc"] as exTuple
